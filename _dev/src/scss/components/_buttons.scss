@@ -1,0 +1,22 @@
+
+// @use "@material/button";
+// @include button.core-styles;
+
+//@import "@material/button/mdc-button";
+
+.btn {
+    background-color: $color-1;
+    color: #fff;
+    padding: 16px 32px;
+    display: inline-block;
+    @include transition;
+
+    &:hover {
+        background-color: $color-2;
+        color: #fff;
+    }
+}
+
+.fancy-btns-wrap {
+    margin-bottom: 64px;
+}

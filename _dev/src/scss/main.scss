@@ -1,0 +1,37 @@
+@charset "utf-8";
+@import "./base/fonts";
+
+@import "./abstracts/functions";
+@import 'include-media/dist/include-media';
+@import "./abstracts/variables";
+@import "bootstrap/scss/mixins";
+@import "./abstracts/mixins";
+
+@import "./base/base"; 
+@import "./base/typography";
+@import "./base/tables";
+@import "./base/animations";
+@import "./base/video";
+@import "./base/print";
+
+@import "./layout/core";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/main-menu";
+
+
+@import "./components/buttons";
+@import "./components/slider";
+@import "./components/carousel";
+@import "./components/scroll-to-top-btn";
+
+@import './home-page/home-slider.scss';
+@import './home-page/services.scss';
+@import './home-page/kitchen.scss';
+@import './home-page/work.scss';
+@import './home-page/benefits.scss';
+@import './home-page/record-kitchen.scss';
+@import './home-page/video.scss';
+@import './home-page/mask.scss';
+@import './home-page/mission.scss';
+@import './home-page/calc.scss';

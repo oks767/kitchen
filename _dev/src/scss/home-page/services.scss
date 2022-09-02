@@ -1,0 +1,101 @@
+.services {
+    padding-top: 30px;
+@include media ('>=xl') {
+    padding-top: 60px;
+}
+    &__title {
+        font-family: $font-title;
+        font-size: 25px;
+        line-height: 33px;
+        text-align: center;
+        color: #39373A;
+
+        @include media ('>=xl') {
+            font-size: 43px;
+            line-height: 57px;
+            width: 728px;
+            margin: 0 auto;
+        }
+    }
+
+    &__inner {
+        margin-top: 21px;
+
+        @include media ('>=md') {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 21px;
+        }
+
+        @include media ('>=xl'){
+            margin-top: 50px;
+            justify-content: space-between;
+        }
+    }
+
+    .card-img {
+        width: 296px;
+        height: 360px;
+        display: block;
+        overflow: hidden;
+        border-radius: 10px;
+        // @include media ('>=xl'){
+        //     width: 265px;
+        //     height: 370px;
+        // }
+    }
+
+    &__card-img {
+        width: 100%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #39373A 100%);
+        object-fit: cover;
+        transition: 0.5s;
+    }
+
+    &__card {
+        margin-left: -15px;
+        position: relative;
+        margin-bottom: 35px;
+        border-radius: 10px;
+
+        @include media ('>=md') {
+            margin-left: 35px;
+        }
+
+        &:hover .services__card-img {
+            transform: scale(1.1);
+        }
+
+        @include media ('>=xl'){
+            width: 265px;
+            height: 370px;
+            margin-left: 0;
+        }
+    }
+
+    &__card-title {
+        font-size: 20px;
+        line-height: 24px;
+        font-family: $font-header;
+        color: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+    }
+}
+
+.line {
+    width: 100px;
+    display: block;
+    position: relative;
+    height: 5px;
+    background-color: $yellow;
+    margin: 0 auto;
+    margin-top: -23px;
+
+    @include media ('>=xl') {
+        margin-top: 11px;
+    }
+}

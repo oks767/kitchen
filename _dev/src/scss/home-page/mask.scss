@@ -1,0 +1,93 @@
+.mask {
+    background-color: $yellow;
+    height: 542px;
+
+    &__title {
+        padding-top: 82px;
+        font-family: $font-title;
+        text-align: center;
+        font-size: 25px;
+        line-height: 33px;
+        margin-bottom: 30px;
+
+        @include media ('>=lg'){
+            font-size: 43px;
+            line-height: 57px;
+        }
+    }
+
+    @include media ('>=lg'){
+        height: 408px;
+    }
+}
+
+.mask-text {
+    font-family: $font-text;
+    font-size: 18px;
+    line-height: 22px;
+    color: $color-text;
+    text-align: center;
+
+    @include media ('>=lg'){
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+.bg-mask {
+    background-image: url('../img/Mask.png');
+    background-size: cover;
+    height: 542px;
+    @include media ('>=lg'){
+        height: 408px;
+    }
+}
+
+
+.mask-tel {
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    padding: 14px 0 14px 29px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 26px;
+
+    font-size: 16px;
+    line-height: 19px;
+    font-family: $font-text;
+
+    @include media ('>=lg'){
+        display: inline-block;
+        width: 354px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-right: 29px;
+    }
+}
+
+.mask-btn {
+    background: #39373A;
+    border-radius: 28px;
+    border: 1px solid $color-text;
+    outline: none;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: $font-text;
+    color: #fff;
+    padding: 14px 61px;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.5s;
+    @include media ('>=lg'){
+        display: inline-block;
+        position: relative;
+        left: 45%;
+        transform: translateX(-45%);
+    }
+
+    &:hover{
+        background-color: transparent;
+    }
+}

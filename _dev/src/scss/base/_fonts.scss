@@ -1,0 +1,36 @@
+// Подключил в шапке сайта
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=cyrillic');
+// @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+
+//font-family: 'Open Sans', sans-serif;
+//font-family: 'PT Sans', sans-serif;
+//font-family: 'Open Sans Condensed', sans-serif;
+//font-family: 'PT Serif', serif;
+
+@font-face {
+    font-family: 'Comissioner-bold';
+    src: url('../fonts/Commissioner-Bold.woff2') format('woff2');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Comissioner-semibold';
+    src: url('../fonts/Commissioner-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Comissioner-regular';
+    src: url('../fonts/Commissioner-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'playfair';
+    src: url('../fonts/PlayfairDisplay-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'playfair-semibold';
+    src: url('../fonts/PlayfairDisplay-SemiBold.ttf') format('ttf');
+    font-weight: 600;
+}

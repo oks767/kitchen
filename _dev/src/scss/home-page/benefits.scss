@@ -1,0 +1,125 @@
+.benefits {
+    padding: 30px;
+
+    &__title {
+        font-family: $font-header;
+        font-size: 25px;
+        line-height: 33px;
+        color: #39373A;
+        text-align: center;
+        @include media ('>=xl'){
+            font-size: 43px;
+            line-height: 57px;
+        }
+    }
+
+    &__item {
+        width: 296px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        min-height: 314px;
+        margin-left: -30px;
+        margin-bottom: 25px;
+
+        @include media ('>=md'){
+            margin-left: 40px;
+        }
+
+        @include media ('>=xl'){
+            width: 309px;
+
+        }
+    }
+}
+.benefits-wrap{
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include media ('>=md'){
+        justify-content: space-around;
+    }
+}
+
+.best-price {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '\e80a';
+        font-family: 'fontello';
+        font-size: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.credit-card{
+    position: relative;
+
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '\e809';
+        font-family: 'fontello';
+        font-size: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.schedule{
+    position: relative;
+
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '\e808';
+        font-family: 'fontello';
+        font-size: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.shield{
+    position: relative;
+
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '\e807';
+        font-family: 'fontello';
+        font-size: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.item-title {
+    font-family: $font-header;
+    font-size: 22px;
+    line-height: 29px;
+    color: #39373A;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0 46px;
+    padding-top:100px;
+    
+}
+
+.item-text {
+    font-family: $font-text;
+    font-size: 16px;
+    line-height: 19px;
+    color: #39373A;
+    text-align: center;
+    padding: 0 36px;
+}

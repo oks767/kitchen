@@ -1,0 +1,215 @@
+.site-header {
+    padding: 4px;
+    padding-left: -3px;
+    height: 56px;
+    background-color: #efefef;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        margin-left: -15px;
+
+        @include media ('>=xl') {
+            margin-top: 25px;
+            margin-left: -20px;
+        }
+    }
+
+    @include media ('>=lg') {
+        height: 81px;
+    }
+
+    @include media ('>=xl') {
+        height: 110px;
+    }
+
+    &__logo img {
+        @include media ('>=xl') {
+            width: 150px;
+            height: 51px;
+        }
+
+    }
+}
+
+.nav-burger {
+    background-image: url('../img/menu.svg');
+    background-repeat: no-repeat;
+    background-size: 24px 12px;
+    width: 24px;
+    height: 12px;
+    margin-top: 17px;
+    margin-right: -15px;
+    cursor: pointer;
+
+    @include media ('>=lg') {
+        display: none;
+    }
+}
+
+.nav {
+    transform: translate(-100%);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: 1s;
+    background-color: #fff;
+}
+
+.nav--active {
+    transform: translate(0);
+}
+
+.nav__list {
+    list-style-type: none;
+    margin-top: 75px;
+    margin-left: -30px;
+    margin-bottom: 30px;
+
+    @include media ('>=lg') {
+        margin-top: 27px;
+        display: flex;
+    }
+
+    @include media ('>=xl') {
+        margin-right: 75px;
+        margin-top: 35px;
+    }
+}
+
+.nav__link {
+    font-family: $font-header;
+    color: #39373A;
+    ;
+    font-size: 16px;
+    line-height: 19px;
+    transition: 0.5s;
+    display: inline;
+
+    &::after {
+        display: inline-block;
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        height: 2px;
+        content: '';
+        background-color: #FFCC29;
+        ;
+        transition: 0.5s;
+        width: 0;
+
+    }
+
+    @include media ('>=lg') {
+        &:hover::after {
+            display: inline;
+            position: absolute;
+            bottom: -25px;
+            width: 100%;
+        }
+    }
+
+}
+
+.nav__item {
+    margin-bottom: 17px;
+
+    @include media ('>=lg') {
+        margin-right: 15px;
+    }
+
+    @include media ('>=xl') {
+        margin-right: 68px;
+    }
+
+    transition: 0.5s;
+    position: relative;
+
+
+
+
+
+    &:hover .nav__link {
+        color: #FFCC29;
+    }
+}
+
+
+
+.nav-close {
+    background: url('../img/close.svg');
+    background-size: 18px 18px;
+    width: 18px;
+    height: 18px;
+    display: block;
+    float: right;
+    margin-top: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+
+    @include media ('>=lg') {
+        display: none;
+    }
+}
+
+.phone {
+    margin-left: 15px;
+    font-family: $font-text;
+    font-weight: 500;
+    color: #39373A;
+    ;
+    font-size: 16px;
+    line-height: 19px;
+    border: 1px solid $yellow;
+    background-color: $yellow;
+    padding: 12px 27px;
+    border-radius: 100px;
+
+    @include media ('>=lg') {
+        display: block;
+        height: 54px;
+        margin-top: 10px;
+    }
+
+    @include media ('>=xl') {
+        padding: 16px 44px;
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 23px;
+        margin-right: 45px;
+    }
+
+}
+
+.lang {
+    display: block;
+
+    @include media ('>=lg') {
+        margin-top: 17px;
+    }
+}
+
+.nav-burger-disactive {
+    display: none;
+}
+
+.nav-close--disactive {
+    display: none;
+}
+
+.nav--desktop {
+    @include media ('>=lg') {
+        transform: translate(0);
+        display: flex;
+        position: unset;
+        background-color: #efefef;
+        height: 56px;
+    }
+
+}

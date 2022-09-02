@@ -1,0 +1,86 @@
+.record-kitchen{
+    position: relative;
+}
+.record-kitchen-bg {
+    background-image: url('../img/banner-10.jpg');
+    height: 360px;
+    background-size: cover;
+    background-position: left;
+
+    @include media ('>=md') {
+        
+        height: 555px;
+    }
+}
+
+.record-kitchen-text {
+    @include media ('>=md') {
+        position: absolute;
+        bottom: 10%;
+        right: 0;
+        transform: translateY(-10%);
+    }
+
+    @include media ('>=xl') {
+        position: absolute;
+        bottom: 10%;
+        right: 3%;
+
+        transform: translate(-3%, -10%)
+    }
+}
+
+.record-kitchen__title {
+    font-family: $font-header;
+    color: $yellow;
+    font-size: 40px;
+    line-height: 49px;
+    margin: 0;
+
+    @include media ('>=md') {
+        font-size: 85px;
+        line-height: 103px;
+    }
+}
+
+.black {
+    font-family: $font-header;
+    color: #39373A;
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 10px;
+
+    @include media ('>=md') {
+        font-size: 48px;
+        line-height: 58px;
+    }
+}
+
+.record-text {
+    font-family: $font-text;
+    color: #39373A;
+    font-size: 18px;
+    line-height: 22px;
+
+    @include media ('>=xl') {
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+.record-btn {
+    font-size: 16px;
+    line-height: 19px;
+    color: #39373A;
+    font-family: $font-text;
+    background-color: $yellow;
+    border: 1px solid $yellow;
+    border-radius: 100px;
+    padding: 13px 40px;
+    transition: all 0.5s;
+    margin-bottom: 51px;
+
+    &:hover {
+        background-color: transparent;
+    }
+}
